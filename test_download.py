@@ -1,5 +1,5 @@
 import pytest
-from mock_flask_server import mock_file_server
+from mock_file_server import mock_file_server
 
 
 
@@ -14,5 +14,4 @@ def client():
 def test_download_file(client):
 	response = client.get('/uploads/hello.txt')
 	assert response.status_code == 200
-	print(dir(response))
 	

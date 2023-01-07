@@ -12,8 +12,7 @@ def mock_file_server():
 	
 	return app
 
-if __name__ == '__main__':
-	
+if __name__ == '__main__':	
 	app = mock_file_server()
 	app.run(debug=True, host='127.0.0.1')
 
